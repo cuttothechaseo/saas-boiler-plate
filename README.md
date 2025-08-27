@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 SaaS Boilerplate
 
-## Getting Started
+> A modern, production-ready SaaS boilerplate built with Next.js and the latest web technologies.
 
-First, run the development server:
+## 📋 Table of Contents
+
+- [Tech Stack](#-tech-stack)
+- [Features](#-features)
+- [Quick Start](#-quick-start)
+- [Installation](#-installation)
+- [Environment Setup](#-environment-setup)
+- [Authentication (Clerk)](#-authentication-clerk)
+- [Security (Arcjet)](#-security-arcjet)
+- [UI Components (Shadcn)](#-ui-components-shadcn)
+- [Database (Drizzle + PostgreSQL)](#-database-drizzle--postgresql)
+- [Webhooks](#-webhooks)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js 15 with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Authentication:** Clerk
+- **Security:** Arcjet
+- **UI Components:** Shadcn/ui
+- **Database:** PostgreSQL with Drizzle ORM
+- **Deployment:** Vercel
+
+## ✨ Features
+
+- [ ] User authentication and management
+- [ ] Rate limiting and security protection
+- [ ] Modern UI components
+- [ ] Database schema and migrations
+- [ ] Webhook handling
+- [ ] Type-safe API routes
+- [ ] Responsive design
+
+## 🚀 Quick Start
 
 ```bash
+# Clone the repository
+git clone <your-repo-url>
+cd saas-boilerplate
+
+# Install dependencies
+npm install @clerk/nextjs
+npm install @arcjet/next
+npm install @t3-oss/env-nextjs
+npm install zod
+npx shadcn@latest init
+npm install next-themes
+
+# Set up environment variables
+cp .env.example .env.local
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Add your installation commands here
+```
 
-## Learn More
+### Development Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Add your dev dependencies here
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 UI Components (Shadcn)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npx shadcn@latest add button dropdown-menu
 
-## Deploy on Vercel
+### Tweakcn Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npx shadcn@latest add https://tweakcn.com/r/themes/nature.json
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🎨 For Font Change --> Change font in layout.tsx and in globals.css --> ctrl+f for "font-sans" and replace with "--font-sans: var(--font-outfit-sans), sans-serif;"
+
+### Usage
+
+<!-- Add component usage examples -->
+
+## 🗄️ Database (Drizzle + PostgreSQL)
+
+### Setup
+
+<!-- Add database setup instructions -->
+
+### Schema
+
+<!-- Add schema information -->
+
+### Migrations
+
+<!-- Add migration commands -->
+
+## 🔗 Webhooks
+
+### Clerk Webhooks
+
+<!-- Add webhook setup instructions -->
+
+## 🚀 Deployment
+
+### Vercel Deployment
+
+<!-- Add deployment instructions -->
+
+### Environment Variables
+
+<!-- List production environment variables -->
+
+## 🤝 Contributing
+
+<!-- Add contributing guidelines -->
+
+---
+
+**Built with ❤️ for rapid SaaS development**
